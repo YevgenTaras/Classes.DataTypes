@@ -26,6 +26,18 @@ namespace Classes.DataTypes.DynamicArray
             }
         }
 
+        public object this[int index]
+        {
+            get
+            {
+                return _items[index];
+            }
+            set
+            {
+                _items[index] = value;
+            }
+        }
+
         public void Clear()
         {
             _count = 0;
@@ -127,18 +139,6 @@ namespace Classes.DataTypes.DynamicArray
             {
                 array.SetValue(_items[i], j);
                 j++;
-            }
-        }
-
-        public object this[int index]
-        {
-            get
-            {
-                return _items[index];
-            }
-            set
-            {
-                _items[index] = value;
             }
         }
 
