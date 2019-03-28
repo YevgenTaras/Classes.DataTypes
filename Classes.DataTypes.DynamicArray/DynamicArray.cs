@@ -18,18 +18,6 @@ namespace Classes.DataTypes.DynamicArray
             _count = 0;
         }
 
-        public object this[int index]
-        {
-            get
-            {
-                return _items[index];
-            }
-            set
-            {
-                _items[index] = value;
-            }
-        }
-
         public int Count
         {
             get
