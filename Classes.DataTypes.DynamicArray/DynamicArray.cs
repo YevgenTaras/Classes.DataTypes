@@ -61,7 +61,7 @@ namespace Classes.DataTypes.DynamicArray
 
             for(int i = 0; i < Count; i++)
             {
-                if(_items[i] == item)
+                if(_items[i].Equals(item))
                 {
                     index = i;
                     break;
@@ -114,7 +114,7 @@ namespace Classes.DataTypes.DynamicArray
 
             for(int i = 0; i < Count; i++)
             {
-                if(_items[i] == item)
+                if(_items[i].Equals(item))
                 {
                     inArray = true;
                     break;
@@ -145,7 +145,7 @@ namespace Classes.DataTypes.DynamicArray
         public void PrintContent()
         {
             Console.WriteLine("Array has a capacity: {0}; And now contains: {1} elements.",_items.Length, Count);
-            Console.WriteLine("[ " + string.Join(",", _items) + " ]");
+            Console.WriteLine("[ " + string.Join(" ", _items) + " ]");
         }
     }
 
