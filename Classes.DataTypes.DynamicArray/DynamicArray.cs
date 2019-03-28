@@ -18,18 +18,6 @@ namespace Classes.DataTypes.DynamicArray
             _count = 0;
         }
 
-        public object this[int index]
-        {
-            get
-            {
-                return _items[index];
-            }
-            set
-            {
-                _items[index] = value;
-            }
-        }
-
         public int Count
         {
             get
@@ -61,7 +49,7 @@ namespace Classes.DataTypes.DynamicArray
 
             for(int i = 0; i < Count; i++)
             {
-                if(_items[i].Equals(item))
+                if(_items[i].Equals(item)) 
                 {
                     index = i;
                     break;
@@ -139,6 +127,18 @@ namespace Classes.DataTypes.DynamicArray
             {
                 array.SetValue(_items[i], j);
                 j++;
+            }
+        }
+
+        public object this[int index]
+        {
+            get
+            {
+                return _items[index];
+            }
+            set
+            {
+                _items[index] = value;
             }
         }
 
