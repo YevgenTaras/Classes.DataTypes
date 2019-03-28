@@ -20,6 +20,7 @@ namespace Classes.DataTypes.DynamicArray
 
         public int Count
         {
+
             get
             {
                 return _count;
