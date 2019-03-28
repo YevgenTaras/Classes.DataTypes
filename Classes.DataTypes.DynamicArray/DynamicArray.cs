@@ -147,14 +147,6 @@ namespace Classes.DataTypes.DynamicArray
             Console.WriteLine("Array has a capacity: {0}; And now contains: {1} elements.",_items.Length, Count);
             Console.WriteLine("[ " + string.Join(",", _items) + " ]");
         }
-
-
-
-
-
-
-
-
     }
 
 }
